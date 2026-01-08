@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML5 Audio & Video Exercise</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <h1>Multimedia Demo</h1>
+
+      <section class="media-block">
+        <h2>Relaxing Audio</h2>
+        <audio id="myAudio" controls>
+          <source src="Wildflowers-chosic.com_.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+        <p class="time-label">Current time: <span id="audioTime">0:00</span></p>
+      </section>
+
+      <section class="media-block">
+        <h2>Sample Video</h2>
+        <video id="myVideo" width="480" controls>
+          <source src="file_example_MP4_480_1_5MG.mp4" type="video/mp4" />
+          Your browser does not support the video element.
+        </video>
+        <p class="time-label">Current time: <span id="videoTime">0:00</span></p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
