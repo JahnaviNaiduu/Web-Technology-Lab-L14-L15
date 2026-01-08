@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Arial, sans-serif;
+  background: linear-gradient(135deg, #1d4ed8, #9333ea);
+  min-height: 100vh;
+  color: #0f172a;
+}
+
+.app {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 24px 28px 30px;
+  background: #f9fafb;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.45);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.task-input button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.task-input button:hover {
+  background: #1d4ed8;
+}
+
+.status-message {
+  min-height: 20px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* Board layout */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.column {
+  background: #e5e7eb;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.column h2 {
+  margin-bottom: 8px;
+  font-size: 1.05rem;
+}
+
+.column-body {
+  min-height: 220px;
+  padding: 6px;
+  border-radius: 10px;
+  background: #f3f4f6;
+}
+
+/* Highlight when a draggable is over the column */
+.column-body.over {
+  outline: 2px dashed #2563eb;
+}
+
+/* Task cards */
+.task-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 4px rgba(15, 23, 42, 0.18);
+  cursor: grab;
+  border-left: 4px solid #2563eb;
+}
+
+.task-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.task-date {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+/* Completed style */
+.task-card.completed {
+  background: #dcfce7;
+  border-left-color: #16a34a;
+}
