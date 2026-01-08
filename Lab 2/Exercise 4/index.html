@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>User Registration & Management</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <h1>User Registration</h1>
+
+      <form id="userForm" novalidate>
+        <div class="form-row">
+          <label for="name">Name *</label>
+          <input type="text" id="name" />
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email *</label>
+          <input type="email" id="email" />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="mobile">Mobile Number *</label>
+          <input type="text" id="mobile" />
+          <span class="error" id="mobileError"></span>
+        </div>
+
+        <div class="form-row">
+          <label for="password">Password *</label>
+          <input type="password" id="password" />
+          <span class="error" id="passwordError"></span>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit">Register User</button>
+          <button type="button" id="clearAllBtn" class="secondary">
+            Clear All Users
+          </button>
+        </div>
+
+        <p id="formMessage" class="form-message"></p>
+      </form>
+
+      <h2>Registered Users</h2>
+      <div class="table-wrapper">
+        <table id="usersTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Mobile</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+            <!-- rows added dynamically -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
