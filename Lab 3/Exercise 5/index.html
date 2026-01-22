@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multi-Stage Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>🧩 Multi-Stage Form Workflow</h2>
+
+    <div class="progress-container">
+      <div id="progressBar"></div>
+    </div>
+
+    <form id="multiForm">
+      <!-- Stage 1 -->
+      <div class="stage active">
+        <h3>Stage 1: Personal Info</h3>
+        <input type="text" id="name" placeholder="Name" />
+        <span class="error" id="nameError"></span>
+        <button type="button" onclick="nextStage()">Next</button>
+      </div>
+
+      <!-- Stage 2 -->
+      <div class="stage">
+        <h3>Stage 2: Contact Info</h3>
+        <input type="email" id="email" placeholder="Email" />
+        <span class="error" id="emailError"></span>
+        <button type="button" onclick="prevStage()">Back</button>
+        <button type="button" onclick="nextStage()">Next</button>
+      </div>
+
+      <!-- Stage 3 -->
+      <div class="stage">
+        <h3>Stage 3: Account Setup</h3>
+        <input type="password" id="password" placeholder="Password" />
+        <span class="error" id="passwordError"></span>
+        <button type="button" onclick="prevStage()">Back</button>
+        <button type="button" onclick="nextStage()">Next</button>
+      </div>
+
+      <!-- Stage 4 -->
+      <div class="stage">
+        <h3>Stage 4: Confirmation</h3>
+        <p>Review and submit your details</p>
+        <button type="button" onclick="prevStage()">Back</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
