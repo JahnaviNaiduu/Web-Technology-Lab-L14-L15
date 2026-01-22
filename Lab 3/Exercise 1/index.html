@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adaptive Registration Form</title>
+    <style>
+      .error {
+        border: 2px solid red;
+      }
+      .success {
+        border: 2px solid green;
+      }
+      .hidden {
+        display: none;
+      }
+      small {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>User Registration</h2>
+
+    <form id="regForm">
+      Name:
+      <input type="text" id="name" /><br /><br />
+
+      Email:
+      <input type="email" id="email" />
+      <small id="emailError"></small><br /><br />
+
+      Password:
+      <input type="password" id="password" />
+      <small id="passError"></small><br /><br />
+
+      Confirm Password:
+      <input type="password" id="confirmPassword" />
+      <small id="confirmError"></small><br /><br />
+
+      Age:
+      <input type="number" id="age" /><br /><br />
+
+      Role:
+      <select id="role">
+        <option value="">Select Role</option>
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="admin">Admin</option></select
+      ><br /><br />
+
+      Skills:
+      <input type="text" id="skills" class="hidden" /><br /><br />
+
+      <button type="submit">Register</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
