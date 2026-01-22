@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  padding: 20px;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.container input,
+.container textarea,
+.container button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.controls {
+  text-align: center;
+  margin: 15px;
+}
+
+.controls button {
+  padding: 8px 12px;
+  margin: 5px;
+}
+
+#log {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+}
