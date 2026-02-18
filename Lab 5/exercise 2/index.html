@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Library Book Tracker</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        margin: auto;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      .error {
+        color: red;
+      }
+      .success {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Library Book Tracker</h2>
+
+    <h3>Add / Update Book</h3>
+    <input id="bid" placeholder="Book ID" />
+    <input id="title" placeholder="Title" />
+    <input id="author" placeholder="Author" />
+    <select id="status">
+      <option value="Available">Available</option>
+      <option value="Issued">Issued</option>
+    </select>
+    <button onclick="addBook()">Add Book</button>
+    <button onclick="updateStatus()">Update Status</button>
+
+    <h3>Delete Book</h3>
+    <input id="delId" placeholder="Book ID" />
+    <button onclick="deleteBook()">Delete</button>
+
+    <p id="msg"></p>
+
+    <h3>Book List</h3>
+    <div id="bookTable"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

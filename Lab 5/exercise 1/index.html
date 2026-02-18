@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Employee Management</title>
+  </head>
+  <body>
+    <h2>Employee Management System</h2>
+
+    <input id="id" placeholder="ID" />
+    <input id="name" placeholder="Name" />
+    <input id="dept" placeholder="Department" />
+    <input id="salary" placeholder="Salary" />
+    <button onclick="addEmployee()">Add</button>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Dept</th>
+          <th>Salary</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="empTable"></tbody>
+    </table>
+
+    <p id="msg"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

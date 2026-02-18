@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Record System</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+      }
+      table {
+        border-collapse: collapse;
+        margin: auto;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      .error {
+        color: red;
+      }
+      .success {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Student Record System</h2>
+
+    <h3>Add / Update Student</h3>
+    <input id="sid" placeholder="Student ID" />
+    <input id="name" placeholder="Name" />
+    <input id="course" placeholder="Course" />
+    <input id="marks" placeholder="Marks" />
+    <button onclick="addStudent()">Add</button>
+    <button onclick="updateStudent()">Update</button>
+
+    <h3>Delete Student</h3>
+    <input id="delId" placeholder="Student ID" />
+    <button onclick="deleteStudent()">Delete</button>
+
+    <p id="msg"></p>
+
+    <h3>Student List</h3>
+    <div id="table"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
