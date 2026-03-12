@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercise 2 - Student Object</title>
+  </head>
+  <body>
+    <h2>Exercise 2: Object Destructuring & Spread Operator</h2>
+
+    <p id="ex2Result1"></p>
+    <p id="ex2Result2"></p>
+
+    <script>
+      // Original student object
+      const student = {
+        id: 101,
+        name: "Priya",
+        department: "CSE",
+        marks: 92,
+      };
+
+      // Object destructuring
+      const { id, name, department, marks } = student;
+
+      document.getElementById("ex2Result1").innerHTML =
+        `ID: ${id}, Name: ${name}, Department: ${department}, Marks: ${marks}`;
+
+      // Create new object using spread operator with grade
+      const updatedStudent = {
+        ...student,
+        grade: "A",
+      };
+
+      document.getElementById("ex2Result2").innerHTML =
+        `Updated Student Object: <br> ${JSON.stringify(updatedStudent)}`;
+    </script>
+  </body>
+</html>

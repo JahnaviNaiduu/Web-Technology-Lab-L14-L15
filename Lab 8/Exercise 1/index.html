@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Exercise 1 - Student Marks</title>
+  </head>
+  <body>
+    <h2>Exercise 1: Student Marks</h2>
+
+    <p id="ex1Result"></p>
+
+    <script>
+      let studentName = "Arun";
+      let mark1 = 85;
+      let mark2 = 90;
+      let mark3 = 88;
+
+      // Calculate total
+      let total = mark1 + mark2 + mark3;
+
+      // Arrow function to calculate average
+      const calculateAverage = (m1, m2, m3) => (m1 + m2 + m3) / 3;
+
+      let average = calculateAverage(mark1, mark2, mark3);
+
+      // Display result using template literals
+      document.getElementById("ex1Result").innerHTML =
+        `Student Name: ${studentName} <br>
+Total Marks: ${total} <br>
+Average Marks: ${average.toFixed(2)}`;
+    </script>
+  </body>
+</html>
